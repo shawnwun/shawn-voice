@@ -122,7 +122,7 @@ Email register requires cleaner output than Slack. These appear repeatedly in Sh
 |---|---|
 | swtich | switch |
 | optiona b | option b |
-| Nikolas bot (possessive) | Nikola's bot |
+| [Name]s bot (possessive) | [Name]'s bot |
 | tmw | tomorrow (external only - signature in internal) |
 
 **DO NOT fix (deliberate casual style):**

@@ -17,9 +17,9 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 **Note:** Missing apostrophe + `?` deliberate. Terse on purpose.
 
 ### 3. To peer - playful
-**Raw:** `Nikolas bot friends are using the strongest model to talk nonsense lol`
-**Polished:** `Nikola's bot friends are using the strongest model to talk nonsense lol`
-**Change:** `Nikolas` → `Nikola's` (genuine possessive, not a signature drop).
+**Raw:** `[Peer]s bot friends are using the strongest model to talk nonsense lol`
+**Polished:** `[Peer]'s bot friends are using the strongest model to talk nonsense lol`
+**Change:** missing possessive `'s` (genuine possessive, not a signature drop).
 
 ### 4. To peer - routing decision
 **Raw:** `Speak to him - he gave the clawbot to a few people so he is fully in charge of that spending`
@@ -27,7 +27,7 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 **Change:** `-` → em-dash, comma before "so", `he is` → `he's`.
 
 ### 5. To peer - metaphor (keep)
-**Raw:** `The precise burst is Matt surgically training models`
+**Raw:** `The precise burst is [Engineer] surgically training models`
 **Polished:** (same)
 **Note:** Metaphor is voice. "The precise burst" is a signature noun phrase - keep.
 
@@ -74,13 +74,13 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 ## External Slack Connect (prospect / customer)
 
 ### 12. Demo share - real corpus
-**Raw:** `@Darek @José :point_up: an agent Claude Code built which I think it is actually quite solid, prob some UX can be tweaked if we really want it. I use this opp to develop my agentic workflow, and I thought I feedback here to the team to see how you all feel about the agent.`
-**Polished:** `@Darek @José :point_up: an agent Claude Code built - I think it's actually quite solid, prob some UX can be tweaked if we really want. I used this opp to develop my agentic workflow, and wanted to share it here so the team can feel out the agent.`
+**Raw:** `@Colleague1 @Colleague2 :point_up: an agent Claude Code built which I think it is actually quite solid, prob some UX can be tweaked if we really want it. I use this opp to develop my agentic workflow, and I thought I feedback here to the team to see how you all feel about the agent.`
+**Polished:** `@Colleague1 @Colleague2 :point_up: an agent Claude Code built - I think it's actually quite solid, prob some UX can be tweaked if we really want. I used this opp to develop my agentic workflow, and wanted to share it here so the team can feel out the agent.`
 **Changes:** `which I think it is` (ESL interference) → em-dash + `I think it's`; `if we really want it` → `if we really want` (trim); `I use` → `I used` (past tense); `I thought I feedback here` (drift) → `wanted to share it here`; `see how you all feel` → `the team can feel out`. Keep `prob`, em-dash, `:point_up:`, casual tone.
 
 ### 13. Routing decision - real corpus
-**Raw:** `Whether you want to use it or not, up to the deal team @Darek @José`
-**Polished:** `Whether you want to use it or not - up to the deal team. @Darek @José`
+**Raw:** `Whether you want to use it or not, up to the deal team @Colleague1 @Colleague2`
+**Polished:** `Whether you want to use it or not - up to the deal team. @Colleague1 @Colleague2`
 **Changes:** Em-dash for pivot; period before mentions. Minimal - the voice is clean.
 
 ---
@@ -89,7 +89,7 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 
 ### 14. Incident flag (synthesized)
 **Raw:** `hey - wanted to flag that we're seeing some intermittent issues on the call routing, prob impacting 1-2% of calls. my team is digging in and I will update you by EOD.`
-**Polished:** `Hi Alex - quick heads up: we're seeing intermittent issues on call routing, probably affecting 1–2% of calls. My team is digging in. I'll update you by end of day.`
+**Polished:** `Hi [Customer] - quick heads up: we're seeing intermittent issues on call routing, probably affecting 1–2% of calls. My team is digging in. I'll update you by end of day.`
 **Changes:** `hey` → `Hi <name>` (email convention, named recipient); `wanted to flag that` → `quick heads up:` (direct); `prob` → `probably` (external email polish); `impacting` → `affecting` (precise); `my team` → `My team` + period (split sentence). Keep em-dash, standalone action sentence.
 
 ---
@@ -97,9 +97,9 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 ## External email cold (first touch, press, analyst)
 
 ### 15. Reconnect (synthesized)
-**Raw-style:** `Hi, we met at the gartner summit last week. I wanted to reconnect on what we discussed re conversational ai roadmap - happy to set up a call if useful. Let me know.`
-**Polished:** `Hi Alex - we met at the Gartner summit last week. I'd like to reconnect on the conversational AI roadmap we discussed. I can set up a call next week if that works - here are a couple of slots that work on my side: [link].`
-**Changes:** Named recipient; em-dash after `Hi Alex` (signature); `wanted to reconnect on what we discussed re X` → `reconnect on the X we discussed` (clean); `happy to` → `I can` (direct, not slop); `Let me know` (banned) → concrete offer + slot link. Keep em-dash.
+**Raw-style:** `Hi, we met at the [Conference] summit last week. I wanted to reconnect on what we discussed re conversational ai roadmap - happy to set up a call if useful. Let me know.`
+**Polished:** `Hi [Contact] - we met at the [Conference] summit last week. I'd like to reconnect on the conversational AI roadmap we discussed. I can set up a call next week if that works - here are a couple of slots that work on my side: [link].`
+**Changes:** Named recipient; em-dash after `Hi [Contact]` (signature); `wanted to reconnect on what we discussed re X` → `reconnect on the X we discussed` (clean); `happy to` → `I can` (direct, not slop); `Let me know` (banned) → concrete offer + slot link. Keep em-dash.
 
 ---
 
@@ -111,44 +111,44 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 **Note:** Signature. Lowercase in this context is casual internal email forward. Keep.
 
 ### E2. Internal peer forward - directive with deadline
-**Raw (sent):** `@Razvan Kusztos @Tomasz Cichy please pick up first thing tomorrow`
+**Raw (sent):** `@Colleague1 @Colleague2 please pick up first thing tomorrow`
 **Polished:** (same)
 **Note:** Classic directive pattern. "please" before the ask. No ceremony. Keep.
 
 ### E3. External customer - tech explanation
-**Raw (sent):** `Hi Prasanth, we identified that the issue stems from long Chinese title encoding during processing, which invalidates the Azure length limit. We have a fix in place…`
+**Raw (sent):** `Hi [Contact], we identified that the issue stems from long Chinese title encoding during processing, which invalidates the Azure length limit. We have a fix in place…`
 **Polished:** (same)
 **Note:** Clean external-warm technical explanation. Good template for customer support replies.
 
 ### E4. External - warm check-in
-**Raw (sent):** `Hi Ram - hope the customer trip went well. Still around until Saturday if you want to find a window this week.`
-**Polished:** `Hi Ram - hope the customer trip went well. Still around until Saturday if you want to find a window this week.`
+**Raw (sent):** `Hi [Contact] - hope the customer trip went well. Still around until Saturday if you want to find a window this week.`
+**Polished:** `Hi [Contact] - hope the customer trip went well. Still around until Saturday if you want to find a window this week.`
 **Change:** `-` → em-dash (signature). Minimal.
 
 ### E5. External - declining with warmth
-**Raw (sent):** `Hey Ram - no worries at all! Saturday doesn't quite work as I'm heading back to London. Let's make it happen next time I'm in the valley. Hope Spain is good!`
-**Polished:** `Hey Ram - no worries at all! Saturday doesn't quite work as I'm heading back to London. Let's make it happen next time I'm in the valley. Hope Spain is good!`
+**Raw (sent):** `Hey [Contact] - no worries at all! Saturday doesn't quite work as I'm heading back to London. Let's make it happen next time I'm in the valley. Hope Spain is good!`
+**Polished:** `Hey [Contact] - no worries at all! Saturday doesn't quite work as I'm heading back to London. Let's make it happen next time I'm in the valley. Hope Spain is good!`
 **Change:** `-` → em-dash only. This is a model external warm decline - preserves warmth while being direct about constraint.
 
 ### E6. External investor - brief reply
-**Raw (sent):** `Hi Bruce, I have asked the team to look into it. Do you remember the names of the two voices you are referring to?`
-**Polished:** `Hi Bruce, I've asked the team to look into it. Do you remember the names of the two voices you were referring to?`
-**Changes:** `have asked` → `I've asked` (contraction for flow); `are referring` → `were referring` (tense match - Bruce was referring to them, past action). Direct, no slop. Keep short.
+**Raw (sent):** `Hi [Investor], I have asked the team to look into it. Do you remember the names of the two voices you are referring to?`
+**Polished:** `Hi [Investor], I've asked the team to look into it. Do you remember the names of the two voices you were referring to?`
+**Changes:** `have asked` → `I've asked` (contraction for flow); `are referring` → `were referring` (tense match - the investor was referring to them, past action). Direct, no slop. Keep short.
 
-### E7. External first-touch (Anthropic intro)
-**Raw (sent):** `Hi Mathieu, Nice to e-meet you… topics: 1. per user token usage [and more discussion points]`
-**Polished (fuller version):** `Hi Mathieu, Nice to e-meet you - thanks for setting this up. Topics I'd like to cover: 1. per-user token usage, 2. ..., 3. ... Looking forward to it.`
+### E7. External first-touch (cold intro via mutual contact)
+**Raw (sent):** `Hi [Contact], Nice to e-meet you… topics: 1. per user token usage [and more discussion points]`
+**Polished (fuller version):** `Hi [Contact], Nice to e-meet you - thanks for setting this up. Topics I'd like to cover: 1. per-user token usage, 2. ..., 3. ... Looking forward to it.`
 **Note:** "Nice to e-meet you" - signature. "e-meet" keeps in external-cold intros. Add em-dash + concrete list.
 
 ### E8. External warm - tech setup reply
-**Raw (sent):** `Hi Dharmesh and team, prasanth.vijayan@zoom.us has been added to the account. Regarding next week's session, could you let us know what time works?`
+**Raw (sent):** `Hi [Contact] and team, [new_user]@[vendor].com has been added to the account. Regarding next week's session, could you let us know what time works?`
 **Polished:** (same)
 **Note:** Model external technical-warm email. "Regarding X" pivot is clean. Keep.
 
 ### E9. Internal peer email - ultra-casual
-**Raw (sent):** `wanna send Eddy there?`
+**Raw (sent):** `wanna send [Colleague] there?`
 **Polished:** (same)
-**Note:** Peer DM-style in email. Shawn writes to cofounder Nikola this way. Preserve. Don't add greeting/closing.
+**Note:** Peer DM-style in email. Shawn writes to the cofounder this way. Preserve. Don't add greeting/closing.
 
 ### E10. Internal peer email - playful
 **Raw (sent):** `Should we just do PE play? Lol`
@@ -161,18 +161,18 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 **Note:** Signature bluntness. Fragment. No apostrophe on "what are we" is fine (already grammatically OK). Keep.
 
 ### E12. External warm - offer + routing
-**Raw (sent):** `Hi Doktor, Happy to chat - looping in Claire to help organise from our side!`
-**Polished:** `Hi Doktor - Happy to chat. Looping in Claire to help organise from our side.`
+**Raw (sent):** `Hi [Contact], Happy to chat - looping in [EA] to help organise from our side!`
+**Polished:** `Hi [Contact] - Happy to chat. Looping in [EA] to help organise from our side.`
 **Changes:** Em-dash after name. Period after "chat" (split from routing). Trailing `!` - keep if warmth needed, drop if neutral. Signature offer pattern + CC-routing preserved.
 
 ### E13. External cold - intro accept
-**Raw (sent):** `Hi George, Great to meet you, just RSVPed, looking forward to it.`
-**Polished:** `Hi George - great to meet you. Just RSVPed, looking forward to it.`
+**Raw (sent):** `Hi [Contact], Great to meet you, just RSVPed, looking forward to it.`
+**Polished:** `Hi [Contact] - great to meet you. Just RSVPed, looking forward to it.`
 **Changes:** Em-dash after name. Lowercase "great" (start of clause after em-dash). Period between "you" and "Just RSVPed" (tighten comma splice).
 
-### E14. External - PG&E technical response to Salesforce
-**Raw (sent):** `Hi Apoorva, Great question - happy to clear this up! PG&E uses several numbers with different traffic splits… The outage line is already 100% Peggy…`
-**Polished:** `Hi Apoorva - great question. Happy to clear this up: PG&E uses several numbers with different traffic splits. The outage line is already 100% Peggy...`
+### E14. External - customer technical response about routing
+**Raw (sent):** `Hi [Contact], Great question - happy to clear this up! [Customer] uses several numbers with different traffic splits… The [specific line] is already 100% [platform]…`
+**Polished:** `Hi [Contact] - great question. Happy to clear this up: [Customer] uses several numbers with different traffic splits. The [specific line] is already 100% [platform]...`
 **Changes:** Em-dash after name; "great question" lowercase; colon instead of "!" for lead-in; cleaner punctuation. "Great question" kept because substance follows (per ANTI_SLOP nuance).
 
 ### E15. External - quick no
@@ -181,13 +181,13 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 **Note:** Signature minimal reply. Perfect as-is.
 
 ### E16. Signature abbreviation
-**Raw (sent):** `Sg Scott, talk soon`
+**Raw (sent):** `Sg [Contact], talk soon`
 **Polished:** (same)
-**Note:** "Sg" (Sounds good) is a rare Shawn-signature. Use only with contacts he's clearly close with (Scott Hutchinson here). Don't deploy generically.
+**Note:** "Sg" (Sounds good) is a rare Shawn-signature. Use only with specific close contacts. Don't deploy generically.
 
 ### E17. Internal forward with FYI
-**Raw (sent):** `FYI - @Paul Annetts can you help to look into this and maybe share some thoughts in the slack channel?`
-**Polished:** `FYI - @Paul Annetts can you help look into this and share some thoughts in the slack channel?`
+**Raw (sent):** `FYI - @[Colleague] can you help to look into this and maybe share some thoughts in the slack channel?`
+**Polished:** `FYI - @[Colleague] can you help look into this and share some thoughts in the slack channel?`
 **Changes:** `-` → em-dash; `help to look` → `help look` (drop "to"); dropped "maybe" (filler). Keep FYI + @-routing + "please"-free directive (terseness is appropriate for internal peer).
 
 ---
@@ -218,9 +218,9 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 ### F1. Cold first-touch to senior analyst (stranger)
 **Bucket:** Email external formal (analyst, no prior contact)
 **Polished:**
-> Hi Sarah,
+> Hi [Analyst],
 >
-> Joe mentioned you just joined Forrester covering voice AI - good to connect. I run engineering at PolyAI; we build voice agents for enterprise customer service, mostly Fortune 500 in banking, hospitality, and utilities.
+> [Colleague] mentioned you just joined [Analyst Firm] covering voice AI - good to connect. I run engineering at PolyAI; we build voice agents for enterprise customer service, mostly Fortune 500 in banking, hospitality, and utilities.
 >
 > I'd like to set up a 30-minute briefing to walk you through what we're doing and hear your research priorities for the year. A few slots that work on my side: [link]. If you'd prefer to start async, our latest product notes are here: [link].
 >
@@ -228,35 +228,35 @@ Concrete transformations that preserve voice while fixing drift and sharpening. 
 > Shawn Wen
 > CTO, PolyAI
 
-**Register shift from warm-external:** Proper `Hi Sarah,` (no hyphen), `good to connect` warmth marker, `I'd like to set up` (first-touch formality) instead of `Happy to set up`, sign-off with title. Hyphen kept. Voice kept. 80 words instead of 215 in AI-slop version.
+**Register shift from warm-external:** Proper `Hi [Name],` (no hyphen), `good to connect` warmth marker, `I'd like to set up` (first-touch formality) instead of `Happy to set up`, sign-off with title. Hyphen kept. Voice kept. 80 words instead of 215 in AI-slop version.
 
 ### F2. Customer escalation / written apology
 **Bucket:** Email external formal (customer escalation)
 **Polished:**
-> Hi Rachel,
+> Hi [Customer],
 >
-> Apologies for the disruption on the call-routing yesterday. We identified the root cause within 40 minutes (a race condition triggered by the new ASR model rollout) and deployed a fix at 18:30 BST. Service has been stable since.
+> Apologies for the disruption on the call-routing yesterday. We identified the root cause within [X] minutes (a race condition triggered by the new [subsystem] rollout) and deployed a fix at [time]. Service has been stable since.
 >
 > I'd like to walk you through what happened and our plan to prevent a recurrence. Are you free for a 20-minute call this week? A few slots on my side: [link].
 >
 > Best,
 > Shawn
 
-**Register shift:** `Apologies for` (plural, ESL-correct), specific detail (40 mins, 18:30 BST, race condition), direct ownership `I'd like to walk you through`, concrete call slot. No "We deeply apologise" / "Please rest assured". Voice stays Shawn. Formality adds proper close.
+**Register shift:** `Apologies for` (plural, ESL-correct), specific detail (timing, subsystem cause), direct ownership `I'd like to walk you through`, concrete call slot. No "We deeply apologise" / "Please rest assured". Voice stays Shawn. Formality adds proper close.
 
 ### F3. Board / investor formal update (excerpt)
 **Bucket:** Email external formal (board/investor, permanent record)
 **Polished:**
-> Hi Bruce,
+> Hi [Investor],
 >
 > Quick update ahead of Wednesday's call. Q1 ARR landed at $X.XM (+Y% QoQ); three of the top five deals in pipeline slipped to Q2, two for procurement reasons and one timing. We are on track for H1 targets.
 >
-> On the platform side, we shipped the Salesforce integration to GA last week and three enterprise customers have adopted it. Eddy can walk through the architecture on the call if useful.
+> On the platform side, we shipped the [integration] to GA last week and three enterprise customers have adopted it. [Colleague] can walk through the architecture on the call if useful.
 >
 > Best,
 > Shawn
 
-**Register shift:** Facts-first, `I think` trimmed, specific numbers, concrete adoption (`three enterprise customers`), offer specific follow-up (`Eddy can walk through`). No "We're very excited to report" / "thrilled to share". Sign-off `Best, Shawn` since Bruce knows you.
+**Register shift:** Facts-first, `I think` trimmed, specific numbers, concrete adoption (`three enterprise customers`), offer specific follow-up (`[Colleague] can walk through`). No "We're very excited to report" / "thrilled to share". Sign-off `Best, Shawn` since the investor knows you.
 
 ### F4. Regulator / legal response
 **Bucket:** Email external formal (legal/compliance, high formality)

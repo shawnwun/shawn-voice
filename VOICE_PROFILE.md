@@ -72,7 +72,7 @@ None in DMs. Occasionally `thanks` or `thanks @X` as the closing line.
 ### Register
 - Heavy shortforms: `prob`, `tbh`, `btw`, `sth`, `temp`, `obv`, `ofc`
 - Slack emoji shortcodes used freely
-- Dry humor / light teasing welcome: "Nikola's bot friends are using the strongest model to talk nonsense lol"
+- Dry humor / light teasing welcome: "[Peer]'s bot friends are using the strongest model to talk nonsense lol"
 - Playful: `xd`, `loooool`, `hahahah`
 
 ### ESL drift tolerance
@@ -89,10 +89,10 @@ Terse. Decisions announced:
 - "Feel free to bring them back temp"
 
 ### Audience-specific sub-registers
-- **DM with AI assistant (Shawn Clawnery)** - most terse. "progress?", "whats the progress", "hey ?" - fine as-is.
-- **DM with peers** (Matt, Oisin, Kristen, Christopher) - casual, playful, wry humor expected.
+- **DM with AI assistant** - most terse. "progress?", "whats the progress", "hey ?" - fine as-is.
+- **DM with peers** - casual, playful, wry humor expected.
 - **Public internal channels** - more complete sentences when explaining technical context, still informal.
-- **Group DMs with exec peers** (Nikola, Chris, Helen, Ryan) - short, reactive; occasionally longer for coordination.
+- **Group DMs with exec peers** - short, reactive; occasionally longer for coordination.
 
 ---
 
@@ -102,7 +102,7 @@ Terse. Decisions announced:
 3–6 sentences typical. More structured. But still in his voice - not corporate register.
 
 ### Register
-- Shortforms `prob`, `sth`, `tbh` still appear (corpus evidence from `#prospect_upstream-rehabilitation_cba`) - these are on-brand, not slop
+- Shortforms `prob`, `sth`, `tbh` still appear (corpus evidence from external prospect channel) - these are on-brand, not slop
 - hyphen (not em-dash) still used - core signature
 - Keeps directness - doesn't over-hedge
 - Thanks contributors explicitly: `thanks @X @Y for providing...`
@@ -112,7 +112,7 @@ Terse. Decisions announced:
 **Low.** Fix articles, prepositions, tense, plural agreement. Preserve hyphens (NEVER em-dashes) and directness.
 
 ### Polished corpus example (external prospect channel)
-> "@Darek @José :point_up: an agent Claude Code built which I think it is actually quite solid, prob some UX can be tweaked if we really want it. I use this opp to develop my agentic workflow, and I thought I feedback here to the team to see how you all feel about the agent. Thanks @Alex @Adnan for providing some Raintree integration points..."
+> "@Colleague1 @Colleague2 :point_up: an agent Claude Code built which I think it is actually quite solid, prob some UX can be tweaked if we really want it. I use this opp to develop my agentic workflow, and I thought I feedback here to the team to see how you all feel about the agent. Thanks @Colleague3 @Colleague4 for providing some [customer] integration points..."
 
 **Preserved**: `prob`, `I think`, hyphens (NEVER em-dashes), direct attribution, `thanks @X for Y`.
 **Drift to fix**: `I thought I feedback here` → `I wanted to share it here`. `which I think it is` (Chinese-English clause pattern) → split with hyphen.
@@ -153,10 +153,10 @@ Terse. Decisions announced:
 ## EMAIL MODE (added v2)
 
 ### Openings
-`Hi <name>` dominant. Sometimes `Hey <name>` for closer relationships. No "Hello", "Dear", "Good morning". Peer-casual emails sometimes no opening: "wanna send Eddy there?", "Fancy some nice breakfast? :D".
+`Hi <name>` dominant. Sometimes `Hey <name>` for closer relationships. No "Hello", "Dear", "Good morning". Peer-casual emails sometimes no opening: "wanna send [Colleague] there?", "Fancy some nice breakfast? :D".
 
 ### Closings
-Minimal. Usually no sign-off. Sometimes `thanks!` inline. Never "Best regards", "Sincerely", "Kind regards". Signature quirk: `Sg Scott, talk soon` ("Sg" = "Sounds good", used sparingly with specific people).
+Minimal. Usually no sign-off. Sometimes `thanks!` inline. Never "Best regards", "Sincerely", "Kind regards". Signature quirk: `Sg [Contact], talk soon` ("Sg" = "Sounds good", used sparingly with specific people).
 
 ### Punctuation in email
 - Full contractions: `I'm`, `let's`, `doesn't`, `I'll` (unlike Slack where apostrophes drop)
@@ -180,20 +180,20 @@ Minimal. Usually no sign-off. Sometimes `thanks!` inline. Never "Best regards", 
    Distinguish from the banned slop `Happy to help` (generic, hollow). Offering a specific action = signature. Offering "help" generically = slop.
 
 2. **"CC @X to help coordinate/organise"** - delegation signature:
-   - `CC @Claire Moore to help to coordinate a 30 mins call`
-   - `Cc Claire to help organise thanks!`
-   - `looping in Claire to help organise from our side!`
+   - `CC @[EA] to help to coordinate a 30 mins call`
+   - `Cc [EA] to help organise thanks!`
+   - `looping in [EA] to help organise from our side!`
    
    Concrete routing ask, not vague "please help". Keep.
 
 3. **"Looking forward to X"** - warm close pattern. Keep.
 
-4. **hyphen (not em-dash) in email openings** - "Hi Ram - hope the customer trip went well" / "Hi Ram - no worries at all!". Consistent across internal + external.
+4. **hyphen (not em-dash) in email openings** - "Hi [Contact] - hope the customer trip went well" / "Hi [Contact] - no worries at all!". Consistent across internal + external.
 
 5. **Terse internal email directives**:
    - `Guys what are we dragging this for?`
-   - `@Razvan @Tomasz please pick up first thing tomorrow`
-   - `FYI - @Paul can you help to look into this`
+   - `@Colleague1 @Colleague2 please pick up first thing tomorrow`
+   - `FYI - @[Colleague] can you help to look into this`
    - `We know about this and are looking into it?`
    
    These are Slack-style in email to internal peers. Keep.
@@ -204,7 +204,7 @@ Minimal. Usually no sign-off. Sometimes `thanks!` inline. Never "Best regards", 
 - **External warm reply**: 2-4 sentences
 - **External warm first-touch / thank-you**: 3-6 sentences
 - **External cold** (investor, new prospect): 4-8 sentences with context, concrete ask, and offer
-- **Technical explanation email** (Zoom team, Salesforce): can go 6-10 sentences when genuinely explaining
+- **Technical explanation email** (vendor/partner team): can go 6-10 sentences when genuinely explaining
 
 ### Email-specific ESL drift (corpus evidence)
 - `Apology to get back to you late` → `Apologies for getting back to you late` (Apology singular is wrong - always fix)
@@ -220,7 +220,7 @@ Minimal. Usually no sign-off. Sometimes `thanks!` inline. Never "Best regards", 
 - `CC @X to help organise` - standard routing
 - `Looping in @X` - warmer variant
 - `cc @X here to help see what we can do` - technical escalation routing
-- `Cc Claire to help to coordinate` - OK (Claire = EA; this is her signature delegation)
+- `Cc [EA] to help to coordinate` - OK (this is the EA's signature delegation)
 
 ---
 
@@ -284,9 +284,9 @@ Full words only:
 - Direct asks, concrete choices
 
 ### Formal example - cold first-touch to analyst
-> Hi Sarah,
+> Hi [Analyst],
 >
-> Joe mentioned you just joined Forrester covering voice AI - good to connect. I run engineering at PolyAI; we build voice agents for enterprise customer service, mostly Fortune 500 in banking, hospitality, and utilities.
+> [Colleague] mentioned you just joined [Analyst Firm] covering voice AI - good to connect. I run engineering at PolyAI; we build voice agents for enterprise customer service, mostly Fortune 500 in banking, hospitality, and utilities.
 >
 > I'd like to set up a 30-minute briefing to walk you through what we're doing and hear your research priorities for the year. A few slots that work on my side: [link]. If you'd prefer to start async, our latest product notes are here: [link].
 >
@@ -294,19 +294,19 @@ Full words only:
 > Shawn Wen
 > CTO, PolyAI
 
-Compared to warm-external cold: proper capitalised name, formal opener (no `Hi Sarah -`), `I'd like to` instead of `Happy to` for first-touch formality, sign-off with title.
+Compared to warm-external cold: proper capitalised name, formal opener (no `Hi [Name] -`), `I'd like to` instead of `Happy to` for first-touch formality, sign-off with title.
 
 ### Formal example - customer escalation / apology
-> Hi Rachel,
+> Hi [Customer],
 >
-> Apologies for the disruption on the call-routing yesterday. We identified the root cause within 40 minutes (a race condition triggered by the new ASR model rollout) and deployed a fix at 18:30 BST. Service has been stable since.
+> Apologies for the disruption on the call-routing yesterday. We identified the root cause within [X] minutes (a race condition triggered by the new [subsystem] rollout) and deployed a fix at [time]. Service has been stable since.
 >
 > I'd like to walk you through what happened and our plan to prevent a recurrence. Are you free for a 20-minute call this week? A few slots on my side: [link].
 >
 > Best,
 > Shawn
 
-Preserved: specific detail (40 mins, 18:30 BST, race condition), direct `I'd like to walk you through`, concrete slots. Added (vs warm): proper sign-off, no shortforms, full sentences.
+Preserved: specific detail (timing, subsystem cause), direct `I'd like to walk you through`, concrete slots. Added (vs warm): proper sign-off, no shortforms, full sentences.
 
 ---
 
@@ -368,7 +368,7 @@ Topic cues: "incident", "outage", "step down", "leaving", "let go", "restructure
 
 ## Corpus notes (updated v2)
 
-- **Slack**: 181 msgs. Heaviest register: DMs with AI assistant Shawn Clawnery (53 msgs - most directive). Also strong internal peer voice (~25 msgs across Matt/Kristen/Chris/Oisin/Sami/Eddy/Claire).
-- **Email**: 89 sent emails. Strong external-warm sample (30+ emails to Zoom, Krisp, Microsoft, Anthropic, Salesforce, VC contacts). Solid external-cold (Bruce @ Khosla, cold intros via George/Morgan). Internal email also captured (@poly-ai.com: peer directives, forwards, FYIs).
-- **Now covered** (was absent in v1): board/investor (Khosla, Lombardo Odier Scott), press/analyst-adjacent (none yet - still absent), cold outbound (Zoom series, Mistral response), technical support explanation (Zoom Prasanth series, Krisp).
-- **Still thin**: investor/board long-form (only short replies to Bruce captured), press/analyst voice not in corpus, internal all-hands announcements not in corpus.
+- **Slack**: 181 msgs. Heaviest register: DMs with an AI assistant (53 msgs - most directive). Also strong internal peer voice (~25 msgs across multiple colleagues).
+- **Email**: 89 sent emails. Strong external-warm sample (30+ emails to vendors, partners, VC contacts). Solid external-cold (investor replies, cold intros via mutual connections). Internal email also captured (peer directives, forwards, FYIs).
+- **Now covered** (was absent in v1): board/investor, press/analyst-adjacent (none yet - still absent), cold outbound (vendor series, partnership responses), technical support explanation (integration partners).
+- **Still thin**: investor/board long-form (only short replies captured), press/analyst voice not in corpus, internal all-hands announcements not in corpus.

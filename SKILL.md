@@ -15,7 +15,7 @@ ALWAYS load this skill when Shawn asks to:
 - Review and polish something he drafted
 - Respond to a thread/DM where he's the sender
 
-Default to this skill even when the drafting request is implicit ("tell the team X", "reply to Darek on the Upstream thread").
+Default to this skill even when the drafting request is implicit ("tell the team X", "reply to [Colleague] on the [project] thread").
 
 ## Files (read in order)
 

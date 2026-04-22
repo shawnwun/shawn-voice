@@ -20,7 +20,7 @@ You use "I think" a lot, even on assertive statements ("I think it is actually q
 
 ## 2. Shortforms in external emails ✅ ANSWERED BY CORPUS
 
-**Evidence from 89 sent emails:** You do NOT use `prob`, `sth`, `tbh`, `btw` in emails. Email register is full words. Exception: `Sg` appears once ("Sg Scott, talk soon") with a close contact.
+**Evidence from 89 sent emails:** You do NOT use `prob`, `sth`, `tbh`, `btw` in emails. Email register is full words. Exception: `Sg` appears once ("Sg [Contact], talk soon") with a close contact.
 
 **Locked rule:** Shortforms in Slack only. No shortforms in email (with one personal-relationship exception, `Sg`, used sparingly).
 
@@ -171,7 +171,7 @@ These channels from your corpus were classified automatically. Flip any that are
 
 | Channel | Classified | Confirm? |
 |---|---|---|
-| `#prospect_upstream-rehabilitation_cba` | external | ✓ / ✗ |
+| `#prospect_[customer]_[id]` | external | ✓ / ✗ |
 | `#ai-enablement-marketing` | internal | ✓ / ✗ |
 | `#ai-enablement-sales` | internal | ✓ / ✗ |
 | `#bot-exchange-intel` | internal | ✓ / ✗ |
@@ -208,7 +208,7 @@ Corpus: 10+ uses in email - "Happy to chat", "Happy to jump on a call", "Happy t
 
 ## 17. "Sg Scott, talk soon" - the "Sg" abbreviation
 
-Rare corpus use, once with Scott Hutchinson.
+Rare corpus use, once with a specific close contact.
 
 **Question:** Where should skill deploy this?
 
@@ -228,17 +228,17 @@ Quirky signature you use occasionally.
 
 ## 19. `CC @X to help coordinate/organise` delegation
 
-Signature in email. Heavily used with Claire Moore (EA).
+Signature in email. Heavily used with the EA.
 
 **Question:** When a draft needs routing, which form?
 
-- [ ] `CC @Claire to help organise` (matches corpus - keep `to help` infinitive) (**default**)
-- [ ] `Looping in @Claire to coordinate` (also in corpus)
+- [ ] `CC @[EA] to help organise` (matches corpus - keep `to help` infinitive) (**default**)
+- [ ] `Looping in @[EA] to coordinate` (also in corpus)
 - [ ] Whichever fits the flow of that specific message
 
 ## 20. "Great question" at external email openings
 
-Corpus: "Hi Apoorva, Great question - happy to clear this up!" (PG&E response to Salesforce).
+Corpus: "Hi [Contact], Great question - happy to clear this up!" (customer response about an integration question).
 
 **Question:** Use when substance follows, reject when it's just filler?
 
