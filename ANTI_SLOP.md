@@ -14,7 +14,7 @@
 - "Of course!"
 - "Sure thing!"
 
-**Nuanced:** "Great question" - Shawn uses it externally ("Hi Apoorva, Great question - happy to clear this up!"). When followed by a concrete answer, it's fine. When it's filler before no-content response, it's slop. Judgement call - default to keep if followed by substance, reject if followed by fluff.
+**Nuanced:** "Great question" - Shawn uses it externally ("Hi [Contact], Great question - happy to clear this up!"). When followed by a concrete answer, it's fine. When it's filler before no-content response, it's slop. Judgement call - default to keep if followed by substance, reject if followed by fluff.
 
 ### Closings / trailing disclaimers
 - "Let me know if you have any questions"
