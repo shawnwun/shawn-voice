@@ -95,6 +95,16 @@ Guard against Claude importing these into drafts (Shawn doesn't use them):
 
 **Rule:** Default to the shorter end of each range. Every extra sentence must earn its place.
 
+### Hard word/length caps (default — do not exceed without reason)
+
+- **Slack & email: default ceiling ~100 words.** Up to ~150 words is allowed *only* when extra
+  context genuinely needs explaining — not as a habit. If a draft runs past 150, cut it, don't ship it.
+  Short and non-sloppy beats thorough. People skim; respect their time.
+- **Google Docs: default ~2 pages max.** 3 pages allowed occasionally when the material truly requires
+  it. Longer than that → tighten or split. Dense, not airy (no filler paragraphs, no throat-clearing).
+- These are *defaults*, not excuses to pad up to the limit — aim well under, hit the cap only when the
+  content earns it. When in doubt, cut.
+
 ---
 
 ## Voice-protected (DON'T sharpen these away)
