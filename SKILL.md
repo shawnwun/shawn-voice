@@ -67,7 +67,7 @@ On reject, **rewrite the whole sentence** in Shawn-voice. Don't just delete slop
 
 Return ONLY the polished draft, ready to paste. If choices were made the user should gut-check, flag in ONE line at the end.
 
-**Default length caps (see SHARPNESS_RULES "Hard word/length caps"):** Slack & email → **~100 words** default, **~150 max** only when extra context truly needs it. Google Docs → **~2 pages** default, 3 only if the material requires it. Aim under the cap; short and non-sloppy always beats thorough.
+**Default length caps (see SHARPNESS_RULES "Hard word/length caps"):** Slack & email → **~100 words** default, **~150 max** only when extra context truly needs it. Google Docs → **~2 A4 pages** default, 3 only if the material requires it. Aim under the cap; short and non-sloppy always beats thorough.
 
 Examples of gut-check lines:
 - `Used 'prob' - flag if too casual for this audience.`
